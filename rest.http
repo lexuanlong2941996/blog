@@ -1,0 +1,25 @@
+POST http://localhost:6969/auth/signin
+Content-Type: application/json
+
+{
+    "email": "pnlan1406@gmail.com",
+    "password": "111111",
+    "remember_me": false
+}
+
+###
+
+GET http://localhost:6969/user/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJwbmxhbjE0MDZAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjUxMDY4MDI5LCJleHAiOjE2NTEwNzg4Mjl9.wajT6WPVIthZpDr7Y2DnhDqLQ4rQ0GIY_IArfQl6A5I
+
+###
+
+POST http://localhost:6969/auth/signout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiZW1haWwiOiJwbmxhbjE0MDZAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ4OTg1NjcxLCJleHAiOjE2NDg5ODU3MDF9.y1PhMZkVLXDtoRT0cPT4p7sMmq8WGl0mdxVLWpGB_RQ
+
+###
+GET http://localhost:6969/v1/category/4/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJwbmxhbjE0MDZAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjUyMjYyNDEwLCJleHAiOjE2NTIyNzMyMTB9.sUNO0OcvoMqxbFj82sNPWVpKJpHAlxgKJQcqELFJQWk
+
+###
+GET http://localhost:3080

@@ -1,0 +1,60 @@
+{
+    "name": "graphql-client",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@apollo/client": "^3.6.6",
+        "@chakra-ui/react": "^2.1.2",
+        "@ckeditor/ckeditor5-react": "^5.0.2",
+        "@emotion/react": "^11.9.0",
+        "@emotion/styled": "^11.8.1",
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^13.2.0",
+        "@testing-library/user-event": "^14.2.0",
+        "@types/apollo-upload-client": "^17.0.0",
+        "@types/jest": "^25.2.3",
+        "@types/node": "^12.20.52",
+        "@types/react": "^18.0.11",
+        "@types/react-dom": "^18.0.5",
+        "apexcharts": "^3.35.3",
+        "apollo-upload-client": "^17.0.0",
+        "ckeditor5-build-classic-dna": "^1.3.2",
+        "framer-motion": "^6.3.4",
+        "graphql": "^16.5.0",
+        "moment": "^2.29.3",
+        "react": "^18.1.0",
+        "react-apexcharts": "^1.4.0",
+        "react-dom": "^18.1.0",
+        "react-hook-form": "^7.31.3",
+        "react-icons": "^3.11.0",
+        "react-jwt": "^1.1.6",
+        "react-loader-spinner": "^5.1.5",
+        "react-moment": "^1.1.2",
+        "react-router-dom": "6",
+        "react-scripts": "5.0.1",
+        "react-select": "^5.3.2",
+        "typescript": "^4.7.2",
+        "web-vitals": "^0.2.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

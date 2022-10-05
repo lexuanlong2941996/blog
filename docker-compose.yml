@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+    admin:
+        container_name: admin
+        build:
+            context: .
+            dockerfile: ./graphql-client/Dockerfile
+            target: development
+        command: yarn start
+        ports:
+            - "3000:3000"
+        depends_on:
+            - mongodb
+
+    api:
+        container_name: api
+        build:
+            context: .
+            dockerfile: ./graphql-api/Dockerfile
+            target: development
+        volumes:
+            - .:/usr/src/app/graphql-api
+            - /usr/src/app/graphql-api/node_modules
+        env_file:
+            - ./graphql-api/.env.local
+        command: yarn dev
+        restart: always
+        ports:
+            - "5005:5005"
+        depends_on:
+            - mongodb
+
+    mongodb:
+        container_name: mongodb
+        image: mongo:latest
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: zuno
+            MONGO_INITDB_ROOT_PASSWORD: zunohandsome
+            MONGO_INITDB_DATABASE: graphql
+        restart: always
+        volumes:
+            - ./data:/data/db
+        ports:
+            - "27017:27017"
